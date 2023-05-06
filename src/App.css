@@ -1,19 +1,24 @@
+
 .App {
   text-align: left;
 }
 
+.Start-page {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
 .App-header {
-  background-color: #8F7F6B;
-  min-height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(1, 67, 25);
 }
 
-.NavBar {
+.Nav-bar {
+  min-height: 15vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,30 +26,44 @@
   min-height: 8vh;
 }
 
-button {
-  color: red;
-  min-width: 10vw;
+.btn {
+  color: black;
+  margin : 2vh 5vw;
   min-height: 5vh;
-  padding: 10px;
+  min-width: 10vw;
+  font-size: calc(2vmin);
+  background-color: transparent;
+  border-color: transparent;
+
+  transition: color;
 }
 
-.App-body {
-  background-color: #6B8F7A;
-  min-height: 75vh;
+.btn:press {
+  color:red;
+}
+.btn:hover {
+  color:grey;
+}
+
+.Body-content {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(8px + 2vmin);
-  color: white;
   padding: calc(4px + 2vmin);
+  color: white;
+
+  transition: background-color 3s ease-in;
 }
 
-.Body-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: calc(8px + 2vmin);
+.Body-content:active {
+  background-color: rgba(0, 0, 0, 0.8);;
+}
+.Body-content:current {
+  background-color: rgba(0, 0, 0, 0.8);;
+
 }
 
 .App-footer {
@@ -56,7 +75,6 @@ button {
   justify-content: center;
   font-size: calc(4px + 2vmin);
   color: white;
-
 }
 
 .App-link {
@@ -67,38 +85,4 @@ button {
 .Footer-CR {
   font-size: 2vmin;
 }
-
-
-
-
-/* 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes App-photo-grow {
-  from {
-    transform: scale(1, 1);
-  }
-
-  to {
-    transform: scale(0.5, 0.5);
-  }
-} */
 

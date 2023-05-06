@@ -1,12 +1,13 @@
+import Button from "./Button"
 
 const NavBar = () => {
-  return (
-    <div className='NavBar'>
-        < button title="About"/>
-        < button title="Work"/>
-        < button title="Contact"/>
-    </div>
-  )
+    return (
+        <div className='Nav-bar'>
+            <Button text='About'/>
+            <Button text='Experience'/>
+            <Button text='Contact'/>
+        </div>
+    )
 }
 
 export default NavBar
