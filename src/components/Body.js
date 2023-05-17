@@ -1,7 +1,14 @@
+import ic from './ic.jpg'
 
 const Body = () => {
   return (
-    <div className='Body-content'>
+    <div className='body' style={{
+          backgroundImage: `url(${ic})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+        >
         <h2>About me</h2>
 
         <p>

@@ -1,14 +1,22 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .App {
   text-align: left;
 }
 
-.Start-page {
+.header {
   min-height: 100vh;
   min-width: 100vw;
 }
 
-.App-header {
+.header-text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +25,7 @@
   color: rgb(1, 67, 25);
 }
 
-.Nav-bar {
+.navbar {
   min-height: 15vh;
   display: flex;
   flex-direction: row;
@@ -45,7 +53,7 @@
   color:grey;
 }
 
-.Body-content {
+.body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -57,18 +65,16 @@
 
   transition: background-color 3s ease-in;
 }
-
-.Body-content:active {
+.body:active {
   background-color: rgba(0, 0, 0, 0.8);;
 }
-.Body-content:current {
-  background-color: rgba(0, 0, 0, 0.8);;
-
+.body:current {
+  background-color: rgba(0, 0, 0, 0.2);;
 }
 
-.App-footer {
+.footer {
+  min-height: 100vh;
   background-color: #8F7F6B;
-  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,12 +83,12 @@
   color: white;
 }
 
-.App-link {
+.link {
   color: #61dafb;
   padding: 1vw;
 }
 
-.Footer-CR {
+.footer-cr {
   font-size: 2vmin;
 }
 

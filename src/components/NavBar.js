@@ -2,7 +2,7 @@ import Button from "./Button"
 
 const NavBar = () => {
     return (
-        <div className='Nav-bar'>
+        <div className='navbar'>
             <Button text='About'/>
             <Button text='Experience'/>
             <Button text='Contact'/>
