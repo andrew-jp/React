@@ -7,22 +7,61 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.App {
-  text-align: left;
-}
-
-.header {
+.content {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
   min-width: 100vw;
 }
 
-.header-text {
+
+h1 {
+  background: -webkit-linear-gradient(
+    #bceebd, #adabab
+  );
+
+}
+
+h3 {
+  background: -webkit-linear-gradient(
+    90deg, #bceebd, #adabab
+  );
+}
+
+h1, h3 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 2vh;
+}
+
+h2 {
+  margin: 0;
+}
+
+/*
+This is for the header text
+my name and job title
+*/
+.header-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   font-size: calc(10px + 2vmin);
-  color: rgb(1, 67, 25);
+  color: white;
+
+  /*box around text*/
+  background-color: rgb(49, 49, 49);
+  opacity: 80%;
+  border-radius: 25px;
+
+  margin-left: 28vw;
+  margin-right: 28vw;
+  margin-top: 15vw;
+
+  min-width: 500px;
 }
 
 .navbar {
@@ -53,26 +92,35 @@ body {
   color:grey;
 }
 
-.body {
-  min-height: 100vh;
+.fade-in {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 5vh;
+
+  padding: 5vh;
+}
+
+.about-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  background-color: rgb(49, 49, 49);
+  opacity: 90%;
+  border-radius: 20px;
+  max-width: 85vw;
+
   font-size: calc(8px + 2vmin);
-  padding: calc(4px + 2vmin);
+  padding: 2vw;
   color: white;
-
-  transition: background-color 3s ease-in;
-}
-.body:active {
-  background-color: rgba(0, 0, 0, 0.8);;
-}
-.body:current {
-  background-color: rgba(0, 0, 0, 0.2);;
 }
 
-.footer {
+
+#footer {
   min-height: 100vh;
   background-color: #8F7F6B;
   display: flex;
@@ -81,6 +129,14 @@ body {
   justify-content: center;
   font-size: calc(4px + 2vmin);
   color: white;
+}
+
+#footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 50%;
 }
 
 .link {
@@ -92,3 +148,28 @@ body {
   font-size: 2vmin;
 }
 
+
+.job-title { 
+  font-size: calc(2vw + 6px);
+  color: #cf6902;
+  font-weight: bold;
+}
+
+.job { 
+  font-size: calc(2vw + 2px);
+}
+
+
+.listItem {
+  font-size: 2vw;
+  padding: 3px;
+}
+
+/*holds an entry in the experience section
+title - job
+-sub
+-sub
+*/
+.sub-list {
+  padding: 1vh;
+}

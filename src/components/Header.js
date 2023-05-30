@@ -1,25 +1,24 @@
 import NavBar from "./NavBar"
-import yose from './yosemite.jpg'
+import yose from './img/yosemite.jpg'
 
 const Header = () => {
   return (
     <div
-    className='header'
-    style={{
-      backgroundImage: `url(${yose})`,
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      }
-    }
-    >
+      className='content'
+      id='header'
+      style={{
+        backgroundImage: `url(${yose})`,
+      }}>
       <NavBar />
-      <header className="header-text">
-          <h1>Andrew Pritchett</h1>
-          <p>Software Engineer | Climber</p>
-      </header>
+      <div className='header-content'>
+          <h1>
+            Andrew Pritchett
+          </h1>
+          <h3>
+            Software Engineer
+          </h3>
+      </div>
     </div>
-
   )
 }
 

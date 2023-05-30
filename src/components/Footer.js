@@ -1,4 +1,4 @@
-import climbing from './climbing.jpeg'
+import climbing from './img/climbing.jpeg'
 
 const Footer = () => {
   const scrollTo = (ref) => {
@@ -9,33 +9,29 @@ const Footer = () => {
   
   return (
     <footer
-      className="footer"
+      className="content"
+      id="footer"
       ref={scrollTo}
       style={{
         backgroundImage: `url(${climbing})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
       }}>
-`    <a
-        className="link"
-        href="https://www.linkedin.com/in/andrew-james-pritchett/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        LinkedIn
-      </a>`
-      <a
-        className="link"
-        href="https://github.com/andrew-jp"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GitHub
-      </a>
-
-      <p className='footer-cr'>Copyright 2023 ©</p>
-
+      <div id='footer-content'>
+        <a
+          className="link"
+          href="https://www.linkedin.com/in/andrew-james-pritchett/"
+          target="_blank"
+          rel="noopener noreferrer">
+            LinkedIn
+        </a>
+        <a
+          className="link"
+          href="https://github.com/andrew-jp"
+          target="_blank"
+          rel="noopener noreferrer">
+            GitHub
+        </a>
+        <p className='footer-cr'>Copyright 2023 ©</p>
+      </div>
     </footer>
 
   )
